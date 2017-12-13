@@ -40,6 +40,7 @@ var fortunes = [ // this is gonna be the random place
 bot.on("ready", function() {
   console.log("bobo is in the house");
 
+  bot.user.Status('Online');
   bot.user.setGame('Beta', 'https://twitch.tv/SaharGx');
 })
 

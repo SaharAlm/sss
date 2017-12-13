@@ -3,6 +3,8 @@ const Discord = require("discord.js");
 const TOKEN = "MzgxODgxMDgyODQyMTg1NzQw.DPrONA.pixPZKkbdr_wYXQn7mg_AKXSdn0";
 const prefix = ".";
 
+var bot = new Discord.Client();
+
 bot.on('guildMemberAdd', member => {
   member.guild.channels.get('346023639516315649').send(`**${member.user.username}** has Joined!`)
 });
@@ -20,7 +22,7 @@ var fortunes = [ // this is gonna be the random place
    "i dont agree bitch",
    "what u gonna do?"
 ];
-var bot = new Discord.Client();
+
 
 bot.on("ready", function() {
   console.log("bobo is in the house");

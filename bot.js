@@ -96,6 +96,10 @@ bot.on("message", function(message) {
     case "senycm":
         message.reply("```.rules                                                                                                                                                .סני                                                                                                                                                .seny'sinfo                                                                                                                                                .8ball                                                                                                                                                .senycm ``` ")
         break;
+    default: ({embeds:{
+      title: "NoNoNo My friend",
+      color: 0xFF0000
+    }})
   }
 });
 

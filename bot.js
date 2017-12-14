@@ -8,20 +8,12 @@ bot.on('guildMemberAdd', member => {
     member.setNickname(`??${member.user.username}`)
     member.addRole('384420942010515466', 'Joined in the 90\'s')
   }
-    member.guild.channels.get('353436192353681411').send('**' + member.user.username + '**, Has Joined!')
+    member.guild.channels.get('353436192353681411').send(`**${member.user.username}** Has Joined!`)
 });
 
 bot.on("guildMemberRemove", member => {
-    member.guild.channels.get('353436192353681411').send('**' + member.user.username + '**, ByeBye')
+    member.guild.channels.get('353436192353681411').send(`**${member.user.username}** has left!`)
 
-});
-
-bot.on('guildMemberAdd', member => {
-  member.guild.channels.get('346023639516315649').send(`**${member.user.username}** has Joined!`)
-});
-
-bot.on('guildMemberRemove', member => {
-  member.guild.channels.get('346023639516315649').send(`**${member.user.username}** has left... ByeBye`)
 });
 
 var fortunes = [ // this is gonna be the random place

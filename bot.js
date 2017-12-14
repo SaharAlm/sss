@@ -57,7 +57,7 @@ bot.on("message", function(message) {
         message.channel.send("Pong!");
         break;
     case "info":
-        message.channel.send({embeds{
+        message.channel.send({embed:{
           title: 'info',
           description: 'I am mister BoBo and, im a Twin!',
           color: 0x2980B9 // color yea

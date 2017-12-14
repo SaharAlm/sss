@@ -74,7 +74,11 @@ bot.on("message", function(message) {
         message.channel.send("סני הוא סוג של ניגה שמפחד להיות ניבא")
         break;
     case "mlgsquad":
-        message.channel.send("This is my squad Biatch!")
+        message.channel.send({embed:{
+          title: '💣SquaD',
+          description: 'BoomBiatch is my squad',
+          color: 0x000000
+        }})
         break;
     case "creator!":
         message.channel.send("so.... my name is sahar im 13 YearsOld and i am love to be dank")

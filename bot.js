@@ -97,9 +97,7 @@ bot.on("message", function(message) {
         message.reply("```.rules                                                                                                                                                .סני                                                                                                                                                .seny'sinfo                                                                                                                                                .8ball                                                                                                                                                .senycm ``` ")
         break;
     default:
-        message.channel.send('NoNoNoMyFrIeNd');    
+        message.channel.send('NoNoNoMyFrIeNd');
     }});
-  }
-});
 
 bot.login(TOKEN);

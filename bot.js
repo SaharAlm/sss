@@ -1,8 +1,6 @@
 const Discord = require("discord.js");
-
-const TOKEN = "MzgxODgxMDgyODQyMTg1NzQw.DPrONA.pixPZKkbdr_wYXQn7mg_AKXSdn0";
-const prefix = ".";
-
+const setting = require("./setting.json")
+const prefix = setting.prefix;
 var bot = new Discord.Client();
 
 bot.on('guildMemberAdd', member => {
@@ -50,7 +48,7 @@ bot.on("message", function(message) {
 
   if (!message.content.startsWith(prefix));
 
-  var args = message.content.substring(prefix.length).split(" ");
+  var args = message.content.substring(setting.prefix.length).split(" ");
 
   switch (args[0].toLowerCase()) {
     case "ping":

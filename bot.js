@@ -99,7 +99,7 @@ bot.on("message", function(message) {
     default: ({embeds:{
       title: "NoNoNo My friend",
       color: 0xFF0000
-    }})
+    }});
   }
 });
 

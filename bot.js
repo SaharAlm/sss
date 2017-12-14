@@ -101,9 +101,6 @@ bot.on("message", function(message) {
     case "rules":
         message.reply("``` חוקים: לא לקלל, לא לא להספים, לא להשתמש באימוגים, לא להיות טרולרים, להנות הכי חשוב   ```")
         break;
-    default:
-        message.channel.send('NoNoNoMyFrIeNd');
-        break;
     }});
 
 bot.login(TOKEN);

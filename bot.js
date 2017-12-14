@@ -99,7 +99,7 @@ bot.on("message", function(message) {
     case "rules":
         message.reply("``` חוקים: לא לקלל, לא לא להספים, לא להשתמש באימוגים, לא להיות טרולרים, להנות הכי חשוב   ```")
         break;
-    case: 'infofrezz':
+    case: "infofrezz":
         message.channel.send({embed:{
           title: 'info',
           description: 'simple bot',

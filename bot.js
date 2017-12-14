@@ -57,7 +57,11 @@ bot.on("message", function(message) {
         message.channel.send("Pong!");
         break;
     case "info":
-        message.channel.send("I am mister BoBo and, im a Twin!")
+        message.channel.send({embeds{
+          title: 'info',
+          description: 'I am mister BoBo and, im a Twin!',
+          color: 0x2980B9 // color yea
+        }});
         break;
     case "8ball":
         if (args[1]) message.channel.send(fortunes[Math.floor(Math.random() * fortunes.length)]);

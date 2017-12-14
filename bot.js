@@ -105,7 +105,7 @@ bot.on("message", function(message) {
           description: 'simple bot',
           color: 0xFF2D00
           break;
-        }})
+        }});
     }});
 
 bot.login(setting.token);

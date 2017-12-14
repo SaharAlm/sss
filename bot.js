@@ -58,7 +58,7 @@ bot.on("message", function(message) {
         break;
     case "info":
         message.channel.send({embed:{
-          title: 'info',
+          title: 'ℹ️info',
           description: 'I am mister BoBo and, im a Twin!',
           color: 0x2980B9 // color yea
         }});

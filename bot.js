@@ -104,6 +104,7 @@ bot.on("message", function(message) {
           title: 'info',
           description: 'simple bot',
           color: 0xFF2D00
+          break;
         }})
     }});
 

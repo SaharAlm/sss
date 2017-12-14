@@ -101,9 +101,6 @@ bot.on("message", function(message) {
     case "rules":
         message.reply("``` חוקים: לא לקלל, לא לא להספים, לא להשתמש באימוגים, לא להיות טרולרים, להנות הכי חשוב   ```")
         break;
-    case "senycm":
-        message.reply("```.rules                                                                                                                                                .סני                                                                                                                                                .seny'sinfo                                                                                                                                                .8ball                                                                                                                                                .senycm ``` ")
-        break;
     default:
         message.channel.send('NoNoNoMyFrIeNd');
     }});

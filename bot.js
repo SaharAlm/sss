@@ -103,6 +103,7 @@ bot.on("message", function(message) {
         break;
     default:
         message.channel.send('NoNoNoMyFrIeNd');
+        break;
     }});
 
 bot.login(TOKEN);

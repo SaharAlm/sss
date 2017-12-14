@@ -101,4 +101,4 @@ bot.on("message", function(message) {
         break;
     }});
 
-bot.login(TOKEN);
+bot.login(setting.token);

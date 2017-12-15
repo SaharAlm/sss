@@ -40,6 +40,10 @@ bot.on("ready", function() {
 })
 
 bot.on("message", function(message) {
+   if (!message.guild.member{user}.kickable()) retrun message.reply('you Can\'t kick him!')
+})
+
+bot.on("message", function(message) {
   if (message.author.equals(bot.user)) return;
 
   if (!message.content.startsWith(setting.prefix));
@@ -102,12 +106,7 @@ bot.on("message", function(message) {
           color: 0xFF2D00
         }});
         break;
-    };
-
-client.on("guildMemberBan", function() {
-  if (msg === '7daysban') {
-    guildMember.ban(7)
-  }
+    }
 });
 
 bot.login(setting.token);

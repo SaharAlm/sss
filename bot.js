@@ -26,9 +26,13 @@ var fortunes = [ // this is gonna be the random place
 ];
 
 
+bot
+   .on('guildCreate', console.log)
+   .on('guildDelete', console.log);
+
 bot.on("ready", function() {
-  console.log("bobo is in the house");
-  bot.user.setActivity(`${setting.prefix}info | ${bot.guilds.size} server`) 
+  console.log(`loging ass ${bot.usr.tag} ${bot.user.id} on ${bot.guilds.size} servers`);
+  bot.user.setActivity(`${setting.prefix}info | ${bot.guilds.size} server`)
 
   bot.user.setStatus('Online');
 

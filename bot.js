@@ -104,7 +104,7 @@ bot.on("message", function(message) {
         break;
     };
 
-client.on("guildMemberBan", () => {
+client.on("guildMemberBan", function() => {
   if (msg === '7daysban') {
     guildMember.ban(7)
   }

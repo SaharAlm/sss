@@ -33,7 +33,7 @@ bot
 
 bot.on("ready", function() {
   console.log(`loging ass ${bot.user.id} on ${bot.guilds.size} servers`);
-  
+
   bot.user.setStatus('Online');
 
   bot.user.setGame('Beta', 'https://twitch.tv/SaharGx');
@@ -102,7 +102,8 @@ bot.on("message", function(message) {
           color: 0xFF2D00
         }});
         break;
-    } if (command === 'ban') {
+    }
+    if (command === 'ban') {
       if (msg.member.premission.has('ADMINISTRATOR')) return msg.reply('you aren\'nt a admin!')
     };
   });

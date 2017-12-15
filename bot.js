@@ -31,7 +31,7 @@ bot
    .on('guildDelete', console.log);
 
 bot.on("ready", function() {
-  console.log(`loging ass ${bot.usr.tag} (${bot.user.id}) on ${bot.guilds.size} servers`);
+  console.log(`loging ass ${bot.user.id} on ${bot.guilds.size} servers`);
   bot.user.setActivity(`${setting.prefix}info | ${bot.guilds.size} server`)
 
   bot.user.setStatus('Online');

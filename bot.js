@@ -39,7 +39,7 @@ bot.on("ready", function() {
   bot.user.setGame('Beta', 'https://twitch.tv/SaharGx');
 })
 
-bot.on("message", function(message) {
+bot.on("guildMemberKick", function(message) {
    if (!message.guild.member{user}.kickable()) retrun message.reply('you Can\'t kick him!')
    message.guild.member{user}.kick();
 });

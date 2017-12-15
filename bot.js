@@ -13,7 +13,6 @@ bot.on('guildMemberAdd', member => {
 
 bot.on("guildMemberRemove", member => {
     member.guild.channels.get('353436192353681411').send(`**${member.user.username}** has left!`)
-
 });
 
 var fortunes = [ // this is gonna be the random place

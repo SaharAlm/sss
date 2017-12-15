@@ -102,6 +102,9 @@ bot.on("message", function(message) {
           color: 0xFF2D00
         }});
         break;
-    }});
+    } if (command === 'ban' {
+      if (msg.member.premission.has('ADMINISTRATOR')) return msg.reply('you aren\'nt a admin!')
+    })
+  });
 
 bot.login(setting.token);

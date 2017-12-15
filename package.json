@@ -12,5 +12,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twins1/sss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Twins1/sss/issues"
+  },
+  "homepage": "https://github.com/Twins1/sss#readme"
 }

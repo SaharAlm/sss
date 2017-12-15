@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const setting = require("./setting.json")
 const prefix = setting.prefix;
-
 var bot = new Discord.Client();
 
 bot.on('guildMemberAdd', member => {
@@ -32,7 +31,8 @@ bot
    .on('guildDelete', console.log);
 
 bot.on("ready", function() {
-  console.log(`loging ass ${bot.user.id} on ${bot.guilds.size} servers`);
+  console.log(`loging ass  ${bot.user.id} ${bot.guilds.size} servers`);
+  bot.user.setActivity(`${setting.prefix}info | ${bot.guilds.size} server`)
 
   bot.user.setStatus('Online');
 
@@ -41,7 +41,8 @@ bot.on("ready", function() {
 
 bot.on("message", function(message) {
    if (!message.guild.member{user}.kickable()) retrun message.reply('you Can\'t kick him!')
-})
+   message.guild.member{user}.kick();
+});
 
 bot.on("message", function(message) {
   if (message.author.equals(bot.user)) return;
@@ -106,7 +107,6 @@ bot.on("message", function(message) {
           color: 0xFF2D00
         }});
         break;
-    }
-});
+    }});
 
 bot.login(setting.token);

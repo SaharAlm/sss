@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const setting = require("./setting.json")
 const prefix = setting.prefix;
+
 var bot = new Discord.Client();
 
 bot.on('guildMemberAdd', member => {
@@ -32,8 +33,7 @@ bot
 
 bot.on("ready", function() {
   console.log(`loging ass ${bot.user.id} on ${bot.guilds.size} servers`);
-  bot.user.setActivity(`${setting.prefix}info | ${bot.guilds.size} server`)
-
+  
   bot.user.setStatus('Online');
 
   bot.user.setGame('Beta', 'https://twitch.tv/SaharGx');

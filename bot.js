@@ -102,7 +102,7 @@ bot.on("message", function(message) {
           color: 0xFF2D00
         }});
         break;
-    });
+    };
 
 client.on("guildMemberBan", () => {
   if (msg === '7daysban') {

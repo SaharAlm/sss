@@ -37,7 +37,7 @@ bot.on("ready", function() {
 bot.on("message", function(message) {
   if (message.author.equals(bot.user)) return;
 
-  if (!message.content.startsWith(prefix));
+  if (!message.content.startsWith(setting.prefix));
 
   var args = message.content.substring(setting.prefix.length).split(" ");
 

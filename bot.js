@@ -40,7 +40,7 @@ bot.on("ready", function() {
 })
 
 bot.on("guildMemberKick", function() {
-   if (!message.guild.member{user}.kickable retrun message.reply('you Can\'t kick him!')
+   if (!message.guild.member{user}.kickable) retrun message.reply('you Can\'t kick him!')
    message.guild.member{user}.kick();
 });
 

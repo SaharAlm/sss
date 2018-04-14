@@ -26,9 +26,8 @@ var fortunes = [ // this is gonna be the random place
 ];
 
 
-bot
-   .on('guildCreate', console.log)
-   .on('guildDelete', console.log);
+bot.on('guildCreate', console.log)
+bot.on('guildDelete', console.log);
 
 bot.on("ready", function() {
   console.log(`loging ass  ${bot.user.id} ${bot.guilds.size} servers`);
@@ -39,10 +38,8 @@ bot.on("ready", function() {
   bot.user.setGame('Beta', 'https://twitch.tv/SaharGx');
 })
 
-bot.on("guildMemberKick", function() {
-   if (!message.guild.member.kickable) retrun message.reply('you Can\'t kick him!')
-   message.guild.member.kick();
-});
+
+
 
 bot.on("message", function(message) {
   if (message.author.equals(bot.user)) return;
